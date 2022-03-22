@@ -1,0 +1,28 @@
+{
+    "name": "pro_mern",
+    "version": "1.0.0",
+    "description": "This is along the Pro Mern Stack2",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "node server/server.js"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/ht990325/pro_mern.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/ht990325/pro_mern/issues"
+    },
+    "homepage": "https://github.com/ht990325/pro_mern#readme",
+    "dependencies": {
+        "express": "^4.17.3"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.17.6",
+        "@babel/core": "^7.17.8",
+        "@babel/preset-react": "^7.16.7"
+    }
+}
