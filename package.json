@@ -4,8 +4,10 @@
     "description": "This is along the Pro Mern Stack2",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
-        "start": "node server/server.js"
+        "start": "nodemon -w server server/server.js",
+        "compile": "babel src --out-dir public",
+        "watch": "babel src --out-dir public --watch --verbose",
+        "test": "echo \"Error: no test specified\" && exit 1"
     },
     "repository": {
         "type": "git",
@@ -18,11 +20,14 @@
     },
     "homepage": "https://github.com/ht990325/pro_mern#readme",
     "dependencies": {
-        "express": "^4.17.3"
+        "express": "^4.17.3",
+        "nodemon": "^1.19.4",
+        "prettier-eslint": "^10.1.0"
     },
     "devDependencies": {
         "@babel/cli": "^7.17.6",
         "@babel/core": "^7.17.8",
+        "@babel/preset-env": "^7.16.11",
         "@babel/preset-react": "^7.16.7"
     }
 }
